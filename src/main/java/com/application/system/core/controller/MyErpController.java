@@ -77,9 +77,9 @@ public class MyErpController {
 
     public ServiceResponseVo buildServiceResponse(Integer responseCode, String responseDescription, Object result) {
         ServiceResponseVo responseVo = new ServiceResponseVo();
-        this.responseCode = responseCode;
-        this.responseDescription = responseDescription;
-        this.result = result;
+        responseVo.setCode(responseCode);
+        responseVo.setDescription(responseDescription);
+        responseVo.setResult(result);
         return responseVo;
     }
 
